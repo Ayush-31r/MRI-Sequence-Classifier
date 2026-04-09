@@ -4,6 +4,10 @@ A deep learning classifier that identifies brain MRI acquisition types from raw 
 
 Supports: **T1w · T2w · FLAIR · DWI · BOLD**
 
+**Live app:** [mri-sequence-classifier-nference.streamlit.app](https://mri-sequence-classifier-nference.streamlit.app)
+
+**Kaggle notebooks:** [Data Pipeline](https://www.kaggle.com/code/snglrty44/mri-data-pipeline) · [Model Training](https://www.kaggle.com/code/snglrty44/mri-classifier-training)
+
 ---
 
 ## How it works
@@ -43,7 +47,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Place `best_model.pth` in the `models/` directory before running.
+Place `model.pth` in the `models/` directory before running.
 
 ---
 
@@ -54,8 +58,11 @@ mri-sequence-classifier/
 ├── app.py              # Streamlit app
 ├── preprocess.py       # NIfTI preprocessing pipeline
 ├── requirements.txt
-└── models/
-    └── best_model.pth
+├── models/
+│   └── model.pth
+└── kaggle_notebooks/
+    ├── mri-data-pipeline.ipynb
+    └── mri-classifier-training.ipynb
 ```
 
 ---
