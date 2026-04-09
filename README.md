@@ -99,4 +99,6 @@ If the model's top softmax probability is below **0.70**, the prediction is flag
 
 All training data sourced from [OpenNeuro](https://openneuro.org). Labels derived from BIDS filenames (`_T1w`, `_T2w`, `_FLAIR`, `_dwi`, `_bold`).
 
+Preprocessed PNG dataset: [mri-labels-classification](https://www.kaggle.com/datasets/snglrty44/mri-labels-classification) on Kaggle.
+
 Held-out evaluation on [ds004169](https://openneuro.org/datasets/ds004169) — unseen subjects, unseen dataset.
